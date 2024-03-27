@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".ui.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <Button
+        android:id="@+id/theme_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Theme"
+        android:onClick="toggleTheme" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:columnCount="4"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="end"
+            android:padding="@dimen/default_padding"
+            android:textSize="@dimen/result_size"
+            android:textColor="?attr/colorOnPrimary"
+            tools:text="433" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/reset" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/percent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/delete" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/divide"
+            android:textSize="@dimen/operation_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/one"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/second"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/three"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/plus"
+            android:textSize="@dimen/operation_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/four"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/five"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/six"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/minus"
+            android:textSize="@dimen/operation_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/seven"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/eight"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/nine"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/multi"
+            android:textSize="@dimen/operation_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/doubleZero"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/zero"
+            android:textSize="@dimen/number_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/dot"
+            android:textSize="@dimen/operation_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_solve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/solve"
+            android:textSize="@dimen/operation_size" />
+
+
+    </GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

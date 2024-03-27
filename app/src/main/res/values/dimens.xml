@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="result_size">48sp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="operation_size">32sp</dimen>
+    <dimen name="number_size">32sp</dimen>
+    <dimen name="operation_size_land">24sp</dimen>
+    <dimen name="number_size_land">24sp</dimen>
+    <dimen name="result_size_land">32sp</dimen>
+</resources>
